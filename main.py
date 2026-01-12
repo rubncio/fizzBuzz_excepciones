@@ -14,7 +14,7 @@ En esta kata, se solicita al usuario un numero, si este es:
 #   2- primera implementacion del problema
 if __name__=="__main__":
     
-    numero =input("introduzca un numero")
+    numero =int(input("introduzca un numero: "))
     
     if(numero%3==0 and numero%5==0):
         print("fizzBuzz")
