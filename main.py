@@ -12,10 +12,7 @@ En esta kata, se solicita al usuario un numero, si este es:
 # iteracion 1:
 #   1- crear un repositiorio Fizzbuzz excepciones enviar por chat la url
 #   2- primera implementacion del problema
-if __name__=="__main__":
-    
-    numero =int(input("introduzca un numero: "))
-    
+def fizzbuzz(numero):
     if(numero%3==0 and numero%5==0):
         print("fizzBuzz")
     elif numero%3==0:
@@ -24,3 +21,19 @@ if __name__=="__main__":
         print("Buzz")
     else:
         print(numero)
+
+if __name__=="__main__":
+    while(True):
+        try:
+            
+            numero =int(input("introduzca un numero del 1 al 100: "))
+            if(numero>=1 and numero<=100):
+                fizzbuzz(numero)
+            else:
+                print("Introduzca un numero entre 1 y 100")
+        except(ValueError):
+            print("Valor incorrecto para la cifra")
+        
+    
+    
+    
