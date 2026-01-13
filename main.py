@@ -25,12 +25,11 @@ def fizzbuzz(numero):
 if __name__=="__main__":
     while(True):
         try:
-            
             numero =int(input("introduzca un numero del 1 al 100: "))
-            if(numero>=1 and numero<=100):
-                fizzbuzz(numero)
-            else:
-                print("Introduzca un numero entre 1 y 100")
+            if(numero<1 or numero>100):
+                raise ValueError
+            fizzbuzz(numero)
+
         except(ValueError):
             print("Valor incorrecto para la cifra")
         
