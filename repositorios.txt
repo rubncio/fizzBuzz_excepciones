@@ -1,0 +1,11 @@
+https://github.com/carmen-fdz/FizzBuzz-excepciones.git
+https://github.com/danielgonzalezmotos22/FizzBuzz-exceptions
+https://github.com/davidinformatica18-crypto/KATA.git
+https://github.com/Janhjg/kata-fizzbuzz-exceptions.git
+https://github.com/EdissonCarriedo/FIZZBUZZ-EXCEPCIONES.git
+https://github.com/JuanPlaza-419/Kata-FizzBuzz.git
+https://github.com/ahtius13/fizzbuzz_exceptions.git
+https://github.com/noemioliver/fizzbuzz-exceptions
+https://github.com/rubncio/fizzBuzz_excepciones
+https://github.com/Boolean-type/FizzBuzz
+https://github.com/victorinofdez/fizzbuzz
