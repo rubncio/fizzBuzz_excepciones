@@ -16,6 +16,9 @@ def test_fizzbuzString():
 def test_fizzbuzDouble():
     #valida que el programa de error ante una entrada Double
     pass
+def test_fizzbuzNegativos():
+    #valida que el programa de error ante una entrada entera pero negativo
+    pass
 
 #Validacion limites
 def test_fizzbuzMenorde1():
@@ -28,7 +31,7 @@ def test_fizzbuz1():
 def test_fizzbuzMayorde100():
     #valida que el programa de error ante un numero mayor de 100
     pass
-def test_fizzbuz1():
+def test_fizzbuz100():
     #valida que el programa no de error ante ante la entrada numerica 100
     pass
 
