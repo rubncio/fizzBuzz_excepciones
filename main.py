@@ -9,18 +9,16 @@ En esta kata, se solicita al usuario un numero, si este es:
 
 - Si no es divisible ni entre 3 ni entre 5, debe imprimir el número
 """
-# iteracion 1:
-#   1- crear un repositiorio Fizzbuzz excepciones enviar por chat la url
-#   2- primera implementacion del problema
-def fizzbuzz(numero):
+"""que sea una funcino mas simple en el que reciba un numero n y devuelva un string"""
+def fizzbuzz(numero) -> str:
     if(numero%3==0 and numero%5==0):
-        print("fizzBuzz")
+        return "FizzBuzz"
     elif numero%3==0:
-        print("fizz")
+        return "Fizz"
     elif(numero%5==0):
-        print("Buzz")
+        return "Buzz"
     else:
-        print(numero)
+        return str(numero)
 
 if __name__=="__main__":
     while(True):

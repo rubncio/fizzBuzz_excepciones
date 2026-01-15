@@ -38,13 +38,14 @@ def test_fizzbuz100():
 #Validacion reglas de juego
 def test_fizzbuz3():
     #valida que el programa devuelve fizz ante la entrada numerica 3
-    pass
+    assert fizzbuzz(3) =="Fizz"
+    
 def test_fizzbuz5():
     #valida que el programa devuelve buzz ante la entrada numerica 5
-    pass
+    assert fizzbuzz(5) =="Buzz"
 def test_fizzbuz15():
     #valida que el programa devuelve fizzbuzz ante la entrada numerica 15
-    pass
+    assert fizzbuzz(15) =="FizzBuzz"
 def test_fizzbuz2():
     #valida que el programa devuelve 2 ante la entrada numerica 2
     pass
