@@ -10,8 +10,11 @@ from ..main import fizzbuzz
 - Si no es divisible ni entre 3 ni entre 5, debe imprimir el número
 """
 #Validacion tipos de entrada
-def test_fizzbuzTexto():
-    #valida que el programa de error ante una entrada no numerica
+def test_fizzbuzString():
+    #valida que el programa de error ante una entrada de texto
+    pass
+def test_fizzbuzDouble():
+    #valida que el programa de error ante una entrada Double
     pass
 
 #Validacion limites

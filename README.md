@@ -1,4 +1,4 @@
-En esta kata, se solicita al usuario un numero, si este es:
+En esta kata, se solicita al usuario un numero entre 1 y 100, si este es:
 
 - Divisible entre 3, el programa debe imprimir "Fizz"
 
