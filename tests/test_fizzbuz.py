@@ -1,4 +1,5 @@
 from main import fizzbuzz
+import pytest
 """En esta kata, se solicita al usuario un numero entre 1 y 100, si este es:
 
 - Divisible entre 3, el programa debe imprimir "Fizz"
@@ -12,28 +13,38 @@ from main import fizzbuzz
 #Validacion tipos de entrada
 def test_fizzbuzString():
     #valida que el programa de error ante una entrada de texto
-    pass
+    with pytest.assertRaises(ValueError):
+
+        fizzbuzz("2")
 def test_fizzbuzDouble():
     #valida que el programa de error ante una entrada Double
-    pass
+    with pytest.assertRaises(ValueError):
+
+        fizzbuzz(2.52)
 def test_fizzbuzNegativos():
     #valida que el programa de error ante una entrada entera pero negativo
-    pass
+    with pytest.assertRaises(ValueError):
+
+        fizzbuzz(-5)
 
 #Validacion limites
 def test_fizzbuzMenorde1():
     #valida que el programa de error ante un numero menor de 1
-    pass
+    with pytest.assertRaises(ValueError):
+
+        fizzbuzz(-5)
 def test_fizzbuz1():
     #valida que el programa no de error ante ante la entrada numerica 1
-    pass
+    assert fizzbuzz(1) =="1"
 
 def test_fizzbuzMayorde100():
     #valida que el programa de error ante un numero mayor de 100
-    pass
+    with pytest.assertRaises(ValueError):
+
+        fizzbuzz(150)
 def test_fizzbuz100():
     #valida que el programa no de error ante ante la entrada numerica 100
-    pass
+    assert fizzbuzz(100) =="Buzz"
 
 #Validacion reglas de juego
 def test_fizzbuz3():
