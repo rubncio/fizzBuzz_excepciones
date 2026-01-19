@@ -11,7 +11,7 @@ En esta kata, se solicita al usuario un numero, si este es:
 """
 """que sea una funcino mas simple en el que reciba un numero n y devuelva un string"""
 def fizzbuzz(numero) -> str:
-    if numero<1 or numero>100 or not isinstance(numero, int):
+    if not isinstance(numero, int) or numero<1 or numero>100 :
                 raise ValueError
     if(numero%3==0 and numero%5==0):
         return "FizzBuzz"

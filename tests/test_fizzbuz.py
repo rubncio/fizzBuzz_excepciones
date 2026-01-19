@@ -13,24 +13,24 @@ import pytest
 #Validacion tipos de entrada
 def test_fizzbuzString():
     #valida que el programa de error ante una entrada de texto
-    with pytest.assertRaises(ValueError):
+    with pytest.raises(ValueError):
 
         fizzbuzz("2")
 def test_fizzbuzDouble():
     #valida que el programa de error ante una entrada Double
-    with pytest.assertRaises(ValueError):
+    with pytest.raises(ValueError):
 
         fizzbuzz(2.52)
 def test_fizzbuzNegativos():
     #valida que el programa de error ante una entrada entera pero negativo
-    with pytest.assertRaises(ValueError):
+    with pytest.raises(ValueError):
 
         fizzbuzz(-5)
 
 #Validacion limites
 def test_fizzbuzMenorde1():
     #valida que el programa de error ante un numero menor de 1
-    with pytest.assertRaises(ValueError):
+    with pytest.raises(ValueError):
 
         fizzbuzz(-5)
 def test_fizzbuz1():
@@ -39,7 +39,7 @@ def test_fizzbuz1():
 
 def test_fizzbuzMayorde100():
     #valida que el programa de error ante un numero mayor de 100
-    with pytest.assertRaises(ValueError):
+    with pytest.raises(ValueError):
 
         fizzbuzz(150)
 def test_fizzbuz100():
